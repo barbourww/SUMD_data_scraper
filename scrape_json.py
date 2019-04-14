@@ -40,7 +40,7 @@ class scraper:
 def run_scraper(scraper_name, scraper_url):
     s = scraper(data_name=scraper_name, url=scraper_url)
     while True:
-        s.scrape(interval_seconds=30, duration_minutes=2)
+        s.scrape(interval_seconds=60, duration_minutes=60)
         s.write(directory='data/')
 
 
